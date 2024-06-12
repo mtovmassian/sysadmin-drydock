@@ -1,0 +1,13 @@
+services:
+
+  ubuntu:
+    container_name: sysadmin-nodrama-ubuntu
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: ubuntu
+    command: sleep infinity
+    deploy:
+      resources:
+        limits:
+          memory: 8192M
