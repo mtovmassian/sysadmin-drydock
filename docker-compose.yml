@@ -8,6 +8,8 @@ services:
       target: ubuntu
     ports:
       - 127.0.0.1:2222:22
+    volumes:
+      - ./scripts:/opt/scripts
     deploy:
       resources:
         limits:
