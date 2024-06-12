@@ -6,7 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
       target: ubuntu
-    command: sleep infinity
+    ports:
+      - 127.0.0.1:2222:22
     deploy:
       resources:
         limits:
