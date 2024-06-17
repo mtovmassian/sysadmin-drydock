@@ -14,3 +14,4 @@ services:
       resources:
         limits:
           memory: 8192M
+    #privileged: true
